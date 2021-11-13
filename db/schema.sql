@@ -5,6 +5,8 @@ DROP DATABASE IF EXISTS ecommerce_db;
 CREATE DATABASE ecommerce_db;
 USE ecommerce_db;
 
+/* use `npm run seed` instead
+
 -- CREATE TABLE: CATEGORY
 CREATE TABLE category (
   id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -41,3 +43,4 @@ CREATE TABLE product_tag (
     REFERENCES tag(id)
     ON DELETE SET NULL
 );
+*/
