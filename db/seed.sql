@@ -30,7 +30,6 @@ VALUES
 
 INSERT INTO product_tag (product_id, tag_id)
 VALUES 
- ("Bulk Feed", 52.32, 24, 3),
 (1,1),
 (1,5),
 (2,1),
