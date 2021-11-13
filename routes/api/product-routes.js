@@ -31,6 +31,24 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     // find a single product by its `id`
     // be sure to include its associated Category and Tag data
+    Product.findByPk(req.params.id, {
+            // Query configuration
+            include: [{
+                    model: Category,
+                    attributes: ['category_name']
+                },
+                {
+                    model: Tag,
+                    as: 'tags',
+                    attributes: ['tag_name']
+                }
+            ]
+        })
+        .then(dbData => res.json(dbData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 });
 
 // create new product
@@ -109,6 +127,13 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
     // delete one product by its `id` value
+    Product.destroy({
+            where: { id: req.params.id }
+        }).then((updatedProductTags) => res.json(updatedProductTags))
+        .catch((err) => {
+            // console.log(err);
+            res.status(400).json(err);
+        });
 });
 
 module.exports = router;
