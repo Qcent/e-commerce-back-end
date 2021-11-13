@@ -3,6 +3,7 @@ DROP DATABASE IF EXISTS ecommerce_db;
 
 -- CREATE DATABASE
 CREATE DATABASE ecommerce_db;
+USE ecommerce_db;
 
 -- CREATE TABLE: CATEGORY
 CREATE TABLE category (
@@ -16,7 +17,7 @@ CREATE TABLE product (
   product_name VARCHAR(255) NOT NULL,
   price DECIMAL NOT NULL,
   stock INTEGER NOT NULL DEFAULT(10),
-  categoty_id INTEGER,
+  category_id INTEGER,
     FOREIGN KEY (category_id)
     REFERENCES category(id)
     ON DELETE SET NULL
