@@ -11,12 +11,12 @@ router.get('/', (req, res) => {
             // Query configuration
             include: [{
                     model: Category,
-                    attributes: ['category_name'],
+                    attributes: ['category_name']
                 },
                 {
                     model: Tag,
                     as: 'tags',
-                    attributes: ['tag_name'],
+                    attributes: ['tag_name']
                 }
             ]
         })
