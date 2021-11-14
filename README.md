@@ -18,10 +18,10 @@ An Express API server synced to a MySQL database with Sequelize. Written for Nod
 ## Installation
 
 This project requires that Node.js be installed on the target machine and that is has write access to a MySQL server.  
-1 Copy the repository files and then run `npm i` to install all required dependencies.  
-2 Edit the `.env` file to reflect the login credentials and network path and port required to access your MySQL server. 
-3 Login to your MySQL server and `CREATE DATABASE ecommerce_db` then logout.  
-4 (optional) To seed the database with testing data type `npm run seed` 
+1. Copy the repository files and then run `npm i` to install all required dependencies.  
+2. Edit the `.env` file to reflect the login credentials and network path and port required to access your MySQL server. 
+3. Login to your MySQL server and `CREATE DATABASE ecommerce_db` then logout.  
+4. (optional) To seed the database with testing data type `npm run seed` 
 
 ## Usage
 
