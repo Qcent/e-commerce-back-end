@@ -27,7 +27,9 @@ This project requires that Node.js be installed on the target machine and that i
 
 Once the project has been installed and configured as outlined above, you can run the server by typing `node server.js` or `npm start`.  
 You may then make GET, POST, PUT, and DELETE requests to the server, as shown in the video below, to create and manage an E-Commerce product database.  
-[!Demo Video](videoURL) 
+
+[![E-commerce Demo Video](./assets/app-demo-screenshot.png)](https://drive.google.com/file/d/17OEr6-7zzJhk_aOdlExAwHyHehxvtwpE/view?usp=sharing "E-commerce Demo Video")
+
 
 ## Questions
 
